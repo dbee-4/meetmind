@@ -1,0 +1,10 @@
+Alice (Product Manager): Alright everyone, I'm really excited about this — our Q2 launch is finally on the calendar. We're targeting April 15th!
+Bob (Developer): April 15th? That's only six weeks away. I'm not sure we can have the backend APIs fully tested and stable by then.
+Sarah (Designer): I've already finished the mockups for the landing page, and honestly I think they look fantastic. Can't wait for users to see them.
+Alice (Product Manager): Bob, I hear you, but marketing has already started teasing the date. We really can't push it again.
+Bob (Developer): I get the pressure, but if we rush this, we're going to have bugs in production on day one. That's not a good look either.
+Sarah (Designer): Wait, I thought we agreed last week that the onboarding flow was finalized. Are we still changing requirements?
+Alice (Product Manager): The core flow is locked, Sarah — it's just the API performance that Bob's worried about. Right, Bob?
+Bob (Developer): Performance is part of it, but there are also some unresolved edge cases in the payment module. I flagged these in Jira two weeks ago.
+Sarah (Designer): I'm confused — if the payment flow has issues, does that affect the checkout UI I submitted? Nobody looped me in on this.
+Alice (Product Manager): Okay, let's take a breath. We clearly need a dedicated sync between engineering and design before end of week. I'll set it up.
