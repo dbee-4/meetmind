@@ -11,8 +11,8 @@ import {
   Cell
 } from 'recharts';
 
-const API_URL = 'http://127.0.0.1:8000/api/analyze';
-const AUTH_URL = 'http://127.0.0.1:8000/api';
+const API_URL = 'https://web-production-eef90.up.railway.app/api/analyze';
+const AUTH_URL = 'https://web-production-eef90.up.railway.app/api';
 
 const App = () => {
   // --- Auth State ---
