@@ -176,8 +176,8 @@ const App = () => {
   const Header = () => (
     <nav className="glass" style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-      padding: '12px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-      borderBottom: '1px solid var(--border)'
+      padding: '12px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+      borderBottom: '1px solid var(--border)', flexWrap: 'wrap', gap: '8px'
     }}>
       <div className="text-gradient" style={{ fontSize: '1.5rem', fontWeight: '800', fontFamily: 'Outfit' }}>
         MeetMind
@@ -185,10 +185,14 @@ const App = () => {
       
       {token && (
         <>
-          <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)', fontWeight: '500' }}>
+          <div className="nav-email" style={{ 
+            fontSize: 'clamp(0.7rem, 2vw, 0.9rem)', 
+            color: 'var(--text-muted)', 
+            fontWeight: '500' 
+          }}>
             {localStorage.getItem('meetmind_email') || 'User'}
           </div>
-          <div style={{ display: 'flex', gap: '12px' }}>
+          <div className="nav-buttons" style={{ display: 'flex', gap: '12px' }}>
             <button 
               onClick={() => showHistory ? setShowHistory(false) : fetchHistory()}
               className="glass"

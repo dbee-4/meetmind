@@ -118,3 +118,19 @@ button, input, textarea {
   box-shadow: var(--shadow-glow);
   border-color: var(--primary);
 }
+
+/* Navbar Responsiveness */
+.nav-email {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .nav-email {
+    display: none;
+  }
+  
+  .nav-buttons button {
+    padding: 6px 12px !important;
+    font-size: 0.8rem !important;
+  }
+}
