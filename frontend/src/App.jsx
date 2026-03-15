@@ -263,7 +263,7 @@ const App = () => {
               type="email" placeholder="Email address" required
               value={authEmail} onChange={e => setAuthEmail(e.target.value)}
               className="glass"
-              style={{'--bg-input': '#1f2937', width: '100%', padding: '14px', borderRadius: '12px', color: 'white',
+              style={{'--bg-input': '#1f2937', width: '100%', boxSizing: 'border-box', padding: '14px', borderRadius: '12px', color: 'white',
                 background: 'var(--bg-input)', outline: 'none', border: '1px solid var(--border)'
               }}
             />
@@ -272,7 +272,7 @@ const App = () => {
                 type={showPassword ? 'text' : 'password'} placeholder="Password" required
                 value={authPassword} onChange={e => setAuthPassword(e.target.value)}
                 className="glass"
-                style={{'--bg-input': '#1f2937', width: '100%', padding: '14px', borderRadius: '12px', color: 'white',
+                style={{'--bg-input': '#1f2937', width: '100%', boxSizing: 'border-box', padding: '14px', borderRadius: '12px', color: 'white',
                   background: 'var(--bg-input)', outline: 'none', border: '1px solid var(--border)'
                 }}
               />
@@ -338,13 +338,13 @@ const App = () => {
           <section className="glass" style={{ padding: '40px', borderRadius: '24px' }}>
             <h2 style={{ marginBottom: '24px' }}>New Analysis</h2>
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   <label style={{ fontSize: '0.875rem', fontWeight: '600', color: 'var(--text-muted)' }}>Meeting Title</label>
                   <input 
                     name="title" value={formData.title} onChange={handleInputChange} required
                     className="glass" placeholder="e.g. Design Sync"
-                    style={{ padding: '14px', borderRadius: '12px', background: 'var(--bg-input)', outline: 'none', color: 'white', border: '1px solid var(--border)' }}
+                    style={{ width: '100%', boxSizing: 'border-box', padding: '14px', borderRadius: '12px', background: 'var(--bg-input)', outline: 'none', color: 'white', border: '1px solid var(--border)' }}
                   />
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -352,7 +352,7 @@ const App = () => {
                   <textarea 
                     name="participants" value={formData.participants} onChange={handleInputChange} required
                     className="glass" placeholder="Alice:Lead&#10;Bob:Dev"
-                    style={{ padding: '14px', borderRadius: '12px', background: 'var(--bg-input)', outline: 'none', color: 'white', height: '100px', resize: 'none', border: '1px solid var(--border)' }}
+                    style={{ width: '100%', boxSizing: 'border-box', padding: '14px', borderRadius: '12px', background: 'var(--bg-input)', outline: 'none', color: 'white', height: '100px', resize: 'none', border: '1px solid var(--border)' }}
                   />
                 </div>
               </div>
@@ -361,7 +361,7 @@ const App = () => {
                 <textarea 
                   name="transcript" value={formData.transcript} onChange={handleInputChange} required
                   className="glass" placeholder="Paste transcript here..."
-                  style={{ padding: '14px', borderRadius: '12px', background: 'var(--bg-input)', outline: 'none', color: 'white', minHeight: '160px', border: '1px solid var(--border)' }}
+                  style={{ width: '100%', boxSizing: 'border-box', padding: '14px', borderRadius: '12px', background: 'var(--bg-input)', outline: 'none', color: 'white', minHeight: '160px', border: '1px solid var(--border)' }}
                 />
               </div>
               <button type="submit" className="btn-gradient" style={{ padding: '16px', borderRadius: '14px', fontWeight: '800', fontSize: '1.1rem' }} disabled={loading}>
