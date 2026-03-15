@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+meetmind.db
+.pytest_cache/
+node_modules/
+frontend/dist/
+frontend/node_modules/
+*.egg-info/
+dist/
+build/
